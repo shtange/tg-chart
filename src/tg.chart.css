@@ -1,0 +1,63 @@
+.tgchart-widget-wrapper {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.tgchart-widget-wrapper svg {
+  vertical-align: top;
+  transform: scale(1, -1);
+}
+
+.tgchart-navigator-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 2vh 0 0;
+  position: relative;
+  overflow: hidden;
+}
+.tgchart-navigator-svg {
+  width: 100%;
+}
+.tgchart-navigator-dropzone {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tgchart-navigator-caret-wrapper {
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-left-width: 5px;
+  border-right-width: 5px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  cursor: grab;
+}
+.tgchart-navigator-caret-wrapper:before,
+.tgchart-navigator-caret-wrapper:after {
+  content: " ";
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(245, 245, 245, 0.75);
+  position: absolute;
+  top: 0;
+}
+.tgchart-navigator-caret-wrapper:before {
+  right: 100%;
+}
+.tgchart-navigator-caret-wrapper:after {
+  left: 100%;
+}
+
+.tgchart-widget-wrapper.dark-mode {
+  background-color: #242f3f
+}
+.tgchart-widget-wrapper.dark-mode .tgchart-navigator-caret-wrapper {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.tgchart-widget-wrapper.dark-mode .tgchart-navigator-caret-wrapper:before,
+.tgchart-widget-wrapper.dark-mode .tgchart-navigator-caret-wrapper:after {
+  background-color: rgba(32, 42, 56, 0.7);
+}
